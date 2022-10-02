@@ -87,7 +87,7 @@ function showCityWeather(weather){
     var theWeather  = $('#theWeather');
     theWeather.html(`${weather.weather[0].description}`)
 
-    var hi = $('#hilow')
+    var hilow = $('#hilow')
     hilow.text(`${Math.round(weather.main.temp_min)} c/ ${Math.round(weather.main.temp_max)}`)
 
     var myImg = $('#myImg')
@@ -96,7 +96,7 @@ function showCityWeather(weather){
 
 
  let now = new Date();
-  let date = $('.date');
+  let date = $('#date');
   date.html(dateBuilder(now)) ;
 
 
